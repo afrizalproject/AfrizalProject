@@ -1,0 +1,20 @@
+<?php 
+    session_start();
+    if (!isset($_SESSION["login"])) {
+      header("Location: login.php");  
+    }
+    require '../../function/functions.php';
+    $idData = $_GET["id"];
+
+    if (deleteKritikSarann($idData)>0) {
+        echo "
+                <script>
+                    alert('data berhasil dihapus');
+                </script>            
+            ";
+        header("Location: kritiksaran.php");
+    }else{
+        echo mysqli_error($conn);
+    }
+
+?>

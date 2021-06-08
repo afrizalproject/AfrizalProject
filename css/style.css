@@ -1,0 +1,20 @@
+.nav-link:hover {
+    font-weight: bold;
+}
+
+.btn-logout {
+    text-decoration: none;
+    font-style: normal;
+}
+
+
+.jumbotron {
+    /* padding: 2rem 1rem; */
+    padding-top: 6rem;
+
+    background-color: #e2edff;
+}
+
+section {
+    padding-top: 5rem;
+}
